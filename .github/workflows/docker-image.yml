@@ -16,10 +16,10 @@ jobs:
     - uses: actions/checkout@v3
     - name: docker login
       env:
-        DOCKER_USER: ${{secrets.DOCKER_USER}}
-        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        DOCKER_USER: ZurabBalamtsarashvili
+        DOCKER_PASSWORD: Zurabi123!
       run: |
-        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
+        docker login -u ZurabBalamtsarashvili -p Zurabi123! 
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag zurabbalamtsarashvili/exam:$(date +%s)
       
